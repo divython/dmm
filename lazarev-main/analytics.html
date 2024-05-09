@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="https://assets-global.website-files.com/64a2ab71942e1d57feb6fe39/6528221f95333ff155d01ad2_fav.gif" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="analytics.css">
+
+</head>
+<body>
+    <div class="main">
+    <div class="analytics">
+        <h1>analytics</h1>
+        <div id="login-container">
+          <form id="clear">
+            <div class="inputBox"><input type="email" id="email" placeholder="Your Email....." /></div>
+            <div class="inputBox"><input type="password" id="password" placeholder="Enter Password....."></div>                          
+            <div id="login-button">
+              <div class="inputBox"><input type="button" value="SignUp" onclick="signUp()"></div>
+              <div class="inputBox"><input type="button" value="SignIn" onclick="signIn()"></div>
+              <div class="inputBox"><input type="button"  value="SignOut" onclick="signOut()"></div>
+              <div class="inputBox"><input type="button"  value="Delete" onclick="deleteUser()"></div>
+            </div>
+            <br><br>
+            <div class="inputBox"><button  type="submit"  >Clear Page</button></div>
+          </form>
+          <div id="google-auth"></div>
+        </div>
+      </div>
+    </div>  
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+  <script src="auth.js"></script>
+  
+
+</body>
+</html>
